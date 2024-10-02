@@ -1,0 +1,832 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-09-25 09:07+0000\n"
+"PO-Revision-Date: 2024-09-25 09:08+0000\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
+
+#: app/models.py:12 app/models.py:50 app/models.py:140 app/models.py:155
+#: app/models.py:172
+msgid "title"
+msgstr "Заголовок "
+
+#: app/models.py:13 app/models.py:51 app/models.py:156
+msgid "description"
+msgstr "Описание "
+
+#: app/models.py:21
+msgid "New"
+msgstr "Новость "
+
+#: app/models.py:22
+msgid "News"
+msgstr "Новости "
+
+#: app/models.py:35
+msgid "name"
+msgstr "Имя "
+
+#: app/models.py:36
+msgid "department"
+msgstr "Отдел"
+
+#: app/models.py:37
+msgid "share_capital"
+msgstr "Доля Капитала "
+
+#: app/models.py:38
+msgid "share_fund"
+msgstr "Доля Капитала "
+
+#: app/models.py:42
+msgid "Person"
+msgstr "Персона"
+
+#: app/models.py:43
+msgid "Persons"
+msgstr "Персоны "
+
+#: app/models.py:58
+msgid "Tender"
+msgstr "Тендер"
+
+#: app/models.py:59
+msgid "Tenders"
+msgstr "Тендеры"
+
+#: app/models.py:69
+msgid "License"
+msgstr "Лицензия "
+
+#: app/models.py:70
+msgid "Licenses"
+msgstr "Лицензии"
+
+#: app/models.py:82
+msgid "Year"
+msgstr "Год"
+
+#: app/models.py:83
+msgid "Years"
+msgstr "Года "
+
+#: app/models.py:91
+msgid "Показатель"
+msgstr "Показатель"
+
+#: app/models.py:92
+msgid "Ед. изм."
+msgstr "Ед. изм"
+
+#: app/models.py:98 app/models.py:99
+msgid "FinancialData"
+msgstr "Финансовые показатели "
+
+#: app/models.py:111 app/models.py:112
+msgid "FinancialYearData"
+msgstr "Данные финансового года"
+
+#: app/models.py:120
+msgid "F_I_O"
+msgstr "Ф И О"
+
+#: app/models.py:121
+msgid "position"
+msgstr "Должность"
+
+#: app/models.py:122
+msgid "еducation"
+msgstr "Образование "
+
+#: app/models.py:123
+msgid "specialization"
+msgstr "Специализация"
+
+#: app/models.py:124 app/models.py:158
+msgid "phone"
+msgstr "Номер телефона"
+
+#: app/models.py:125
+msgid "admission_date"
+msgstr "Приемный день"
+
+#: app/models.py:126
+msgid "admission_time"
+msgstr "Приемный час "
+
+#: app/models.py:131
+msgid "Management"
+msgstr "Управление"
+
+#: app/models.py:132
+msgid "Managements"
+msgstr "Управление"
+
+#: app/models.py:146
+msgid "MoreInfo"
+msgstr "Открытые данные"
+
+#: app/models.py:147
+msgid "MoreInfos"
+msgstr "Открытые данные"
+
+#: app/models.py:161
+msgid "Vacancy"
+msgstr "Вакансия "
+
+#: app/models.py:162
+msgid "Vacancies"
+msgstr "Вакансии"
+
+#: app/models.py:173
+msgid "descriptions"
+msgstr "Описание "
+
+#: app/models.py:175
+msgid "slug"
+msgstr "ссылка "
+
+#: app/models.py:188
+#| msgid "department"
+msgid "Department"
+msgstr "Отдел"
+
+#: app/models.py:189
+#| msgid "department"
+msgid "Departments"
+msgstr "Отделы "
+
+#: app/templates/base.html:106 app/templates/base.html:242
+#: app/templates/includes/footer.html:20
+msgid "Logo"
+msgstr " Логотип"
+
+#: app/templates/base.html:123
+msgid "Toggle navigation"
+msgstr "Переключить навигацию"
+
+#: app/templates/base.html:141 app/templates/includes/footer.html:26
+msgid "Asosiy sahifa"
+msgstr "Главная "
+
+#: app/templates/base.html:149
+msgid "Tashkilot tarixi"
+msgstr "История организации"
+
+#: app/templates/base.html:150 app/templates/includes/footer.html:31
+msgid "Tashkiliy tuzilma"
+msgstr "Организационная структура"
+
+#: app/templates/base.html:151
+msgid "Boshqaruv"
+msgstr "Руководство"
+
+#: app/templates/base.html:152 app/templates/includes/footer.html:32
+msgid "Moliyaviy ko'rsatkichlar"
+msgstr " Финансовые показатели"
+
+#: app/templates/base.html:153 app/templates/includes/footer.html:27
+#: app/templates/includes/news_detail.html:162
+#: app/templates/news_detail.html:164
+msgid "Yangiliklar"
+msgstr "Новости "
+
+#: app/templates/base.html:154 app/templates/includes/footer.html:30
+#: app/templates/tenders.html:6
+msgid "Tenderlar"
+msgstr "Тендеры"
+
+#: app/templates/base.html:155 app/templates/includes/footer.html:29
+#: app/templates/license.html:9
+msgid "Akkreditsiya"
+msgstr "Аккредитация"
+
+#: app/templates/base.html:156 app/templates/includes/footer.html:28
+msgid "Aloqa"
+msgstr "Контакты"
+
+#: app/templates/base.html:200
+msgid "Aksiyadorlarga"
+msgstr "Акционерам"
+
+#: app/templates/base.html:205
+msgid "Ijro organi a'zolari"
+msgstr "Члены исполнительного органа"
+
+#: app/templates/base.html:209
+msgid "Bo'limlar"
+msgstr "Разделы "
+
+#: app/templates/base.html:210
+msgid "Ochiq ma'lumotlar"
+msgstr " Открытые данные"
+
+#: app/templates/base.html:211
+msgid "Vakantsiya"
+msgstr "Вакансия"
+
+#: app/templates/boshqaruv.html:6
+msgid "Jamiyatning ijro organi haqida ma'lumot"
+msgstr "Информация о членах исполнительного органа общества"
+
+#: app/templates/boshqaruv.html:16
+msgid "Ijro organi a'zosi"
+msgstr "Члены исполнительного органа"
+
+#: app/templates/department.html:315
+msgid "B'olimlar"
+msgstr "Разделы "
+
+#: app/templates/department.html:321
+#: app/templates/includes/news_detail.html:176
+msgid "Ko'proq bilib olish"
+msgstr " Узнать больше"
+
+#: app/templates/department.html:332
+msgid "Worker"
+msgstr "Worker"
+
+#: app/templates/department.html:336
+msgid ""
+"Neft va gaz konlarini tadqiq etish bo'limi neft va gaz qazib olish "
+"konlarida:"
+msgstr ""
+"Отдел исследований нефтяных и газовых месторождений на нефтегазодобывающих "
+"месторождениях."
+
+#: app/templates/department.html:342 app/templates/department.html:393
+msgid "ishlatilayotgan quduqlarning joriy mahsuldorlik xarakteristikalarini"
+msgstr "Текущие характеристики производительности используемых скважин."
+
+#: app/templates/department.html:346
+msgid "qazib olinayotgan gazning gaz-kondensat xarakteristikalarini"
+msgstr "Газоконденсатные характеристики добываемого газа."
+
+#: app/templates/department.html:350
+msgid "quduqlarning joriy suv ko'rsatgichlarini"
+msgstr "Текущие показатели воды в скважинах."
+
+#: app/templates/department.html:354
+msgid ""
+"quduqlarning qatlam bosimini hamda qazib olinayotgan neftning suvlanish "
+"darajasi"
+msgstr ""
+"Пластовое давление в скважинах и степень обводненности добываемой нефти."
+
+#: app/templates/department.html:362
+msgid "Image 1"
+msgstr "Image 1"
+
+#: app/templates/department.html:366
+msgid ""
+"Gazlar, gaz kondensatlari, neftlar va qatlam suvlari tadqiq etish masalasi."
+msgstr ""
+"Вопросы исследования газов, газовых конденсатов, нефти и пластовых вод."
+
+#: app/templates/department.html:370
+msgid "Image 2"
+msgstr "Image 2"
+
+#: app/templates/department.html:374
+msgid ""
+"Gazni tayyorlash, qayta ishlash va atrof muhitni muxofaza qilish boʻlimi."
+msgstr "Отдел подготовки, переработки газа и охраны окружающей среды."
+
+#: app/templates/department.html:387
+msgid "Kon uskunalari va quvurlarning ingibitorlik himoyasi bo‘limida"
+msgstr "Отдел ингибиторной защиты горного оборудования и трубопроводов."
+
+#: app/templates/department.html:397
+msgid "metallning vodorodlanish darajasini"
+msgstr "Уровень водородирования металла."
+
+#: app/templates/department.html:401
+msgid "qo‘llanilayotgan ingibitorlarning samaradorligini aniqlash"
+msgstr "Определение эффективности применяемых ингибиторов."
+
+#: app/templates/department.html:405
+msgid ""
+"tuproqning metallni yemirilishi xavfi yuqori bo‘lgan joylarini aniqlash"
+msgstr "Определение мест с высоким риском коррозии металлов в почве."
+
+#: app/templates/department_detail.html:17
+msgid "Изображение отсутствует"
+msgstr "Изображение отсутствует"
+
+#: app/templates/finance.html:61
+msgid ""
+"2018 - 2020 yil yakunlari bo‘yicha «Neftgaztadqiqot» AJ asosiy moliyaviy-"
+"iqtisodiy ko‘rsatkichlari haqida ma'lumot"
+msgstr ""
+" Информация о основных финансовых и экономических показателях АО "
+"«Нефтгазтадқиқот» за 2018 - 2020 годы."
+
+#: app/templates/finance.html:70
+msgid "Ko'rsatkichlar"
+msgstr " Финансовые показатели"
+
+#: app/templates/finance.html:72
+msgid "Faoliyat natijalari bo'yicha"
+msgstr "Итоги деятельности в"
+
+#: app/templates/includes/news_detail.html:171
+#: app/templates/news_detail.html:172
+msgid "E'lon qilingan"
+msgstr "Опубликовано"
+
+#: app/templates/includes/news_detail.html:174
+#: app/templates/news_detail.html:174
+msgid "Davomini o'qish"
+msgstr "Читать далее"
+
+#: app/templates/index.html:19
+msgid "+10 yil tajriba"
+msgstr "+65 лет опыта"
+
+#: app/templates/index.html:20
+msgid "Yuqori tajribaga ega arxitektor va injener-konstruktorlar"
+msgstr " Архитекторы и строительные инженеры с высоким опытом"
+
+#: app/templates/index.html:32
+msgid "NeftGazTadqiqot"
+msgstr " Нефть и Газ Исследования"
+
+#: app/templates/index.html:34
+msgid ""
+"2019 yilda Buxoroda tashkil topib 'Freedom Investment MCHJ' 'Imorat "
+"Development' arxitektura kompaniyasi qisqa vaqt ichida O'zbekistonda xususan"
+" Buxoro va Toshkentda murakkab, premium qurilish loyihalari, katta davlat "
+"buyurtmalari hamda madniy meros obyektlari restavratsiyasida yuqori "
+"ko'rsatkichlarga erishdi."
+msgstr ""
+"Предприятие начало свою деятельность в 1959 году в ходе запуска первых нефтегазовых месторождений на территории Бухарской области.\n"
+"Основная цель создания предприятия: • Добыча нефти и газа, их подготовка к транспортировке, а также проведение исследований, направленных на совершенствование технологий транспортировки (передачи)."
+
+#: app/templates/index.html:37
+msgid ""
+"Biz III - darajali murakkablikdagi qurilish obyektlari, premium ko'p qavatli"
+" uylar, restoranlar, 4-5 yulduzli mehmonxonalar eksteryeri va interyeri, "
+"landshaft dizayni, massivlar va kichik shaharchalar bosh rejalarini "
+"yaratishga shuningdek qadimiy obidalar restavratsiyasi hamda madaniy meros "
+"himoyasi hududidagi yangi qurilishlarni loyihalashga ixtisoslashganmiz."
+msgstr ""
+"Наши партнёры — это крупные и мелкие предприятия, занимающиеся добычей и переработкой нефти и газа в различных регионах Республики Узбекистан.\n"
+"\n"
+"В АО «Нефтгазтадқиқот» работают специалисты, которые на высоком уровне выполняют поставленные задачи и работают ради общих целей."
+
+#: app/templates/index.html:40
+msgid ""
+"Portfoliomizda yuqoridagi yo'nalishlar bo'yicha eng sara namunalarni "
+"ko'rishingiz mumkin."
+msgstr ""
+"В нашем портфолио вы можете увидеть лучшие примеры в вышеупомянутых "
+"областях."
+
+#: app/templates/index.html:54
+msgid "Bizning yo'nalishlar"
+msgstr "Проекты"
+
+#: app/templates/index.html:62
+msgid "Neft va gazni qayta ishlash mahsulotlari sinov laboratoriyasi"
+msgstr "Лаборатория испытаний продукции переработки нефти и газа"
+
+#: app/templates/index.html:63
+msgid ""
+"«Нефтгазтажкикот» АЖ таркибидаги нефт ва газни қайта ишлаш маҳсулотлари "
+"синов лабораторияси Ўзбекистон Республикаси Миллий сертификатлаштириш "
+"тизимида аккредитация қилинган."
+msgstr ""
+"Лаборатория испытаний продукции переработки нефти и газа при АО "
+"«Нефтгазтажкикот» аккредитована в Национальной системе сертификации "
+"Республики Узбекистан."
+
+#: app/templates/index.html:73
+msgid "Ekologik-analitik laboratoriya"
+msgstr "Экологическая-аналитическая лаборатория."
+
+#: app/templates/index.html:74
+msgid ""
+"Ўзбекистон Республикаси Табиатни муҳофаза қилиш Давлат қўмитаси томонидан "
+"аттестация қилинган экоаналитик лаборатория."
+msgstr ""
+"Экоаналитическая лаборатория, аттестованная Государственным комитетом "
+"Республики Узбекистан по охране природы."
+
+#: app/templates/index.html:84
+msgid "Inhibitor ximoyasi va elektr-kimyoviy muxofaza laboratoriyasi"
+msgstr "Лаборатория ингибиторной защиты и электрохимической защиты."
+
+#: app/templates/index.html:85
+msgid ""
+"«Ўзстандарт» агентлиги томонидан аттестация қилинган ингибитор химояси ҳамда"
+" электр-кимёвий муҳофаза синов лабораториялари."
+msgstr ""
+"Лаборатории ингибиторной защиты и электрохимической защиты, аттестованные "
+"агентством «Узстандарт»."
+
+#: app/templates/index.html:95
+msgid ""
+"Xalqaro standartlar talablariga javob beradigan tadqiqot laboratoriyalari"
+msgstr ""
+"Исследовательские лаборатории, соответствующие требованиям международных "
+"стандартов."
+
+#: app/templates/index.html:96
+msgid ""
+"Лабораториялар халқаро стандартлар талабларига жавоб беради ва тадқиқотларни"
+" юқори даражада ўтказади."
+msgstr ""
+"Лаборатории соответствуют требованиям международных стандартов и проводят "
+"исследования на высоком уровне."
+
+#: app/templates/index.html:121
+msgid "Bizning loyihalar"
+msgstr "Наши проекты"
+
+#: app/templates/index.html:229
+msgid "Bizni nima uchun tanlashadi"
+msgstr "Почему выбирают нас"
+
+#: app/templates/index.html:237
+msgid "Professional va fidoyi jamoa"
+msgstr "Профессиональная и преданная команда"
+
+#: app/templates/index.html:238
+msgid "Arxitekturani zamonaviy texnologiyalar bilan yaratish."
+msgstr "Создание архитектуры с использованием современных технологий"
+
+#: app/templates/index.html:240 app/templates/index.html:251
+#: app/templates/index.html:262 app/templates/index.html:272
+msgid "ko'proq"
+msgstr "больше"
+
+#: app/templates/index.html:248
+msgid "Bizning afzalliklarimiz"
+msgstr "Наши преимущества"
+
+#: app/templates/index.html:249
+msgid ""
+"Faoliyat yo'nalishlari bo'yicha yuqori malakali mutaxassislarning "
+"mavjudligi."
+msgstr "Наличие высококвалифицированных специалистов в области деятельности."
+
+#: app/templates/index.html:259
+msgid "Sifat va narx hamohangligi"
+msgstr "Соотношение качества и цены"
+
+#: app/templates/index.html:260
+msgid ""
+"Premium xizmat paketlari va tadqiqot va ishlanmalar uchun optimal narxlar."
+msgstr "Премиум пакеты услуг и оптимальные цены на исследования и разработки."
+
+#: app/templates/index.html:269
+msgid "24/7 qo'llab quvvatlash"
+msgstr "Поддержка 24/7"
+
+#: app/templates/index.html:270
+msgid "Konsalting yechimlar va qulay takliflar."
+msgstr "Консультационные решения и удобные предложения"
+
+#: app/templates/index.html:287
+msgid "Biz qanday ishlaymiz"
+msgstr "Как мы работаем "
+
+#: app/templates/index.html:288
+msgid "Oson & Ishonchli"
+msgstr "Просто & Надежный"
+
+#: app/templates/index.html:288
+msgid "Jarayon"
+msgstr "Процесс"
+
+#: app/templates/index.html:290
+msgid "Biz shuni tushunamizki siz bizga fikringizni eshitishimiz"
+msgstr "Мы понимаем, что ваше мнение для нас важно."
+
+#: app/templates/index.html:291
+msgid "va eng muhimi sizning qarashlaringizni tushunishimiz"
+msgstr " и что для нас особенно важно"
+
+#: app/templates/index.html:292
+msgid "uchun murojaat qilasiz."
+msgstr " понимать ваши взгляды."
+
+#: app/templates/index.html:293
+msgid "Shunday ekan, avvalo, loyiha yakunlangach, unda o'z"
+msgstr "Поэтому, в первую очередь, мы стараемся сделать так, "
+
+#: app/templates/index.html:294
+msgid "xohishlaringiz aksini ko'rishingiz uchun harakat qilamiz."
+msgstr "чтобы после завершения проекта в нем отразились ваши пожелания."
+
+#: app/templates/index.html:316
+msgid " Xalqaro sertifikatlangan"
+msgstr "Международно сертифицированный"
+
+#: app/templates/index.html:316
+msgid "yuqori sifatli tadqiqotlar."
+msgstr "исследования высокого качества."
+
+#: app/templates/index.html:325
+msgid "'Neftgaztadqiqot' AJ negizida"
+msgstr "На базе АО \"Нефтгазтадқиқот\" имеется "
+
+#: app/templates/index.html:325
+msgid "xalqaro akkreditatsiyadan o'tgan "
+msgstr "исследовательская лаборатория, "
+
+#: app/templates/index.html:325
+msgid "tadqiqot laboratoriyasi mavjud."
+msgstr "прошедшая международную аккредитацию."
+
+#: app/templates/license.html:12
+msgid ""
+"Ushbu bo‘limda siz kompaniyangizning Akkreditsiya hujjatining PDF-fayllarini"
+" ko‘rishingiz yoki yuklab olishingiz mumkin. Biz shaffoflikka ahamiyat "
+"beramiz va faoliyatimizga bo‘lgan ishonchingiz uchun barcha зарур "
+"hujjatlarni taqdim etamiz."
+msgstr ""
+"В этом разделе вы можете просмотреть или скачать PDF-файл аккредитации вашей"
+" компании. Мы придаем большое значение прозрачности и предоставляем все "
+"необходимые документы для вашей уверенности в нашей деятельности."
+
+#: app/templates/license.html:22
+msgid "PDF Akkreditsiyani yuklab olish"
+msgstr "Скачать PDF аккредитацию"
+
+#: app/templates/license.html:24
+msgid "Akkreditsiya hujjati mavjud emas"
+msgstr "Документ аккредитации отсутствует."
+
+#: app/templates/more_info.html:6
+msgid "Ochiq Ma'lumotlar"
+msgstr "Открытые данные"
+
+#: app/templates/more_info.html:22
+msgid "Bugalteriya hisoboti"
+msgstr " Бухгалтерский отчёт"
+
+#: app/templates/more_info.html:35
+msgid "Moliyaviy natijalar"
+msgstr "Финансовые результаты"
+
+#: app/templates/news_detail.html:185
+msgid "Read less"
+msgstr "Скрыть "
+
+#: app/templates/news_detail.html:185
+msgid "Davomini oqish"
+msgstr "Читать далее"
+
+#: app/templates/persons.html:176
+msgid "Jamiyatning ijro organi a'zolari haqida ma'lumot"
+msgstr "Информация о членах исполнительного органа общества"
+
+#: app/templates/persons.html:187
+msgid "Lavozim"
+msgstr "Должность "
+
+#: app/templates/structure.html:7
+msgid "AO 'Neftgaztadqiqot' AJ tashkiliy tuzilmasi"
+msgstr "Организационная структура АО 'Нефтгазтадкикот'"
+
+#: app/templates/structure.html:9
+msgid "Structure Image"
+msgstr "Схема структуры"
+
+#: app/templates/structure.html:14
+msgid ""
+" \"Neftgaztadqiqot\" AJning Oliy boshqaruv organi aksiyadorlarning Umumiy "
+"yig‘ilishi hisoblanadi. Umumiy yig‘ilish tomonidan saylanadigan Kuzatuv "
+"kengashi jamiyatning umumiy rahbarligini amalga oshirib, faoliyatning "
+"ustivor yo‘nalishlarini, rivojlanish istiqbollari va strategiyasini aniqlab "
+"beradi, hamda jamiyat oldida turgan yaqin muddatdagi maqsadlarni va ularga "
+"erishish taktikasini ishlab chiqadi. Joriy rahbarlik kollegial ijroya organi"
+" – Boshqaruv, tomonidan amalga oshirilib, mazkur organ Umumiy yig‘ilish va "
+"Kuzatuv kengashi tomonidan qabul qilingan qarorlarning bajarilishini "
+"tashkillashtiradi va nazorat qiladi."
+msgstr ""
+" Высшим органом управления АО «Нефтгазтадқиқот» является Общее собрание "
+"акционеров. Наблюдательный совет, избранный Общим собранием, осуществляет "
+"общее руководство обществом, определяет приоритетные направления "
+"деятельности, перспективы развития и стратегию, а также разрабатывает "
+"ближайшие цели и тактику их достижения. Текущим управлением занимается "
+"коллегиальный исполнительный орган – Управление, которое организует и "
+"контролирует выполнение решений, принятых Общим собранием и Наблюдательным "
+"советом."
+
+#: app/templates/tenders.html:19
+msgid "Дата публикации:"
+msgstr "Дата публикации:"
+
+#: app/templates/tenders.html:23
+msgid "Дата окончания конкурса:"
+msgstr "Дата окончания конкурса:"
+
+#: app/templates/tenders.html:29
+msgid "Скачать PDF"
+msgstr "Скачать PDF"
+
+#: app/templates/tenders.html:31
+msgid "PDF недоступен"
+msgstr "PDF недоступен"
+
+#: app/templates/vacancy.html:7 app/templates/vacancy.html:13
+#: app/templates/vacancy.html:14
+msgid "Vakansiya"
+msgstr "Вакансия"
+
+#: app/templates/vacancy.html:20
+msgid "Aloqa uchun: "
+msgstr "Свяжитесь с нами:"
+
+#: development/settings.py:117
+msgid "Russian"
+msgstr "Русский"
+
+#: development/settings.py:118
+msgid "English"
+msgstr "Англиский"
+
+#: development/settings.py:119
+msgid "Uzbek"
+msgstr "Узбекский"
+
+#~ msgid "Biz haqimizda"
+#~ msgstr "О Нас "
+
+#~ msgid "Loyihalar"
+#~ msgstr "Проекты"
+
+#~ msgid "Contact"
+#~ msgstr "Контакты "
+
+#~ msgid "Menu"
+#~ msgstr " Меню"
+
+#, fuzzy
+#~ msgid "PDF Akkreditsiyani yuklab olish 1"
+#~ msgstr "Скачать PDF аккредитацию"
+
+#, fuzzy
+#~ msgid "PDF Akkreditsiyani yuklab olish 2"
+#~ msgstr "Скачать PDF аккредитацию"
+
+#~ msgid "| Asosiy sahifa"
+#~ msgstr "| Главная "
+
+#~ msgid "Tanlang"
+#~ msgstr "Выбрать"
+
+#~ msgid "Imorat Development"
+#~ msgstr "NeftGazTadqiqot"
+
+#~ msgid "12000 dollarlik uyni"
+#~ msgstr "Дом за 12000 долларов"
+
+#~ msgid "12000 dollarga qura olaman,- deb o'ylagan odam optimistdir."
+#~ msgstr ""
+#~ "человек, который думает, что сможет построить его за 12 000 долларов, "
+#~ "является оптимистом."
+
+#~ msgid "Frensis Rodman"
+#~ msgstr "Frensis Rodman"
+
+#~ msgid "Arxitekturaga o'rgatib - bo'lmaydi"
+#~ msgstr "Архитектуру нельзя научить"
+
+#~ msgid "faqatgina odamlarni ilhomlantirish mumkin."
+#~ msgstr "ее можно только вдохновить людей"
+
+#~ msgid "Zaha Hadid"
+#~ msgstr "Захи Хадид"
+
+#~ msgid "Arxitektura bu ovozsiz musiqadir."
+#~ msgstr "Архитектура — это безмолвная музыка."
+
+#~ msgid "Iogan Volfgang Fon Gyote."
+#~ msgstr "Иоганн Вольфганг фон Гёте"
+
+#~ msgid "Biz murakkablikdan voz kechdik "
+#~ msgstr "Мы отказались от сложности"
+
+#~ msgid "Premium xizmat paketlari."
+#~ msgstr "Премиум пакеты услуг"
+
+#~ msgid "Takrorlanmas dizayn"
+#~ msgstr "Уникальный дизайн"
+
+#~ msgid "Loyihangizga joziba bering va bahra oling."
+#~ msgstr "Придайте вашему проекту привлекательность и наслаждайтесь им."
+
+#~ msgid "Hammasi"
+#~ msgstr "Все "
+
+#~ msgid "Arxitektura"
+#~ msgstr "Архитектура "
+
+#~ msgid "Interyer"
+#~ msgstr " Интерьер"
+
+#~ msgid "Madaniy me'ros"
+#~ msgstr " Культурное наследие"
+
+#~ msgid "barcha loyihalarni ko'rish"
+#~ msgstr "посмотреть все проекты"
+
+#~ msgid "Savdo majmuasi"
+#~ msgstr "Торговый комплекс"
+
+#~ msgid "Toshkent"
+#~ msgstr "Ташкент "
+
+#~ msgid "Urganch"
+#~ msgstr "Ургенч "
+
+#~ msgid "Ko'p qavatli uy"
+#~ msgstr "Многоэтажное здание"
+
+#~ msgid "Mehmonxona"
+#~ msgstr "Отель"
+
+#~ msgid "Masjid loyihasi"
+#~ msgstr "Проект мечети"
+
+#~ msgid "Buxoro"
+#~ msgstr "Бухара "
+
+#~ msgid "Co-working zone"
+#~ msgstr "Зона коворкинга"
+
+#~ msgid "Garden Plaza"
+#~ msgstr "Garden Plaza"
+
+#~ msgid "Yopish"
+#~ msgstr "Скрыть "
+
+#~ msgid ""
+#~ "Biz bo'lajak qurilishning bosh rejasi, landshafti, fasadi, planirovkasi, "
+#~ "shakli, qavat rejasi uchun eng sara yechimlarni taqdim etamiz."
+#~ msgstr ""
+#~ "Мы предлагаем лучшие решения для генерального плана, ландшафта, фасада, "
+#~ "планировки, формы и планировки этажей будущих построек."
+
+#~ msgid "Interior Dizayn"
+#~ msgstr "Дизайн интерьера"
+
+#~ msgid ""
+#~ "Dizaynerlarimiz bino va xonalarning bo'lajak holatini siz istagan "
+#~ "shinamlikda va jozibada taqdim qilishadi. Ulardan VR (virtual reallik 360)da"
+#~ " ham bahramand bo'lishingiz mumkin."
+#~ msgstr ""
+#~ "Наши дизайнеры представят будущее состояние зданий и помещений с комфортом и"
+#~ " привлекательностью, которые вы желаете. Вы также можете оценить это в VR "
+#~ "(виртуальная реальность 360)."
+
+#~ msgid "Konstruksiya"
+#~ msgstr "Строительство"
+
+#~ msgid ""
+#~ "Katta loyihalar noodatiy shakldagi binolar, seysmik o'ziga xosliklarga ega "
+#~ "hududlardagi obyektlar qurilishi, qurilish mollarining optimal sarflanishi, "
+#~ "yuklamalarning to'g'ri taqsimlanishi, qurilish hajmining aniq o'lchanishi "
+#~ "uchun malakali injener-muhandislarimiz eng ishonchli va zamonaviy dasturiy "
+#~ "ta'minotlardan foydalanishadi."
+#~ msgstr ""
+#~ "Для крупных проектов, таких как здания с необычными формами, объекты в "
+#~ "сейсмически активных зонах, оптимальное использование строительных "
+#~ "материалов, правильное распределение нагрузок и точное измерение объемов "
+#~ "строительства, наши квалифицированные инженеры используют самые надежные и "
+#~ "современные программные средства."
+
+#~ msgid "VR model"
+#~ msgstr "VR модель "
+
+#~ msgid ""
+#~ "Bunda rejadagi bino yoki interyer virtual ekizagi yaratilib uni oldindan "
+#~ "real hajmda VR ko'zoynaklar orqali kuzatish mumkin bo'ladi."
+#~ msgstr ""
+#~ " В этом процессе создается виртуальная копия здания или интерьера на основе "
+#~ "планов, которую затем можно просматривать в реальном масштабе с помощью VR-"
+#~ "очков."
+
+#~ msgid "Litsenziya"
+#~ msgstr "Лицензия "
+
+#, fuzzy
+#~ msgid "Litsenziya hujjati"
+#~ msgstr "Лицензия "

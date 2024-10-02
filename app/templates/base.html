@@ -1,0 +1,383 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nefti Gaz Tadqiqot</title>
+    <link href="{% static 'css/bootstrap.css' %}" rel="stylesheet">
+    <link href="{% static 'css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'css/responsive.css' %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&family=Teko:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'images/imorat/logo.jpg' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'images/imorat/logo.jpg' %}" type="image/x-icon">
+    <meta name="msapplication-TileImage" content="images/imorat/NeftGazTadqiqot logo copy.png" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- ------------------ -->
+
+    
+    
+    <meta name="description" content="Официальный сайт Ассоциации предприятий нефтегазовой индустрии Узбекистана (AONGI). Информация о деятельности, членах ассоциации, событиях и новостях индустрии.">
+    <meta name="keywords" content="AONGI, нефтегаз, Узбекистан, Ассоциация нефтегазовой индустрии, энергетика, газовая промышленность, нефть">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="canonical" href="domen/ru">
+    <meta name="language" content="ru">
+    
+
+    <meta name="description" content="O'zbekiston neft va gaz sanoati korxonalari assotsiatsiyasining (AONGI) rasmiy sayti. Assotsiatsiya faoliyati, a'zolari, voqealar va yangiliklar haqida ma'lumotlar.">
+    <meta name="keywords" content="AONGI, neft va gaz, O'zbekiston, neft sanoati, energetika, neft, gaz sanoati">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="canonical" href="domen">
+    <meta name="language" content="uz">
+    
+
+    <meta name="description" content="Official website of the Association of Oil and Gas Enterprises of Uzbekistan (AONGI). Information about activities, members, events, and news of the oil and gas industry.">
+    <meta name="keywords" content="AONGI, oil and gas, Uzbekistan, oil industry, energy, gas industry">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="canonical" href="domen/en">
+    <meta name="language" content="en">
+
+
+    <link rel="alternate" hreflang="ru" href="domen/ru" />
+    <link rel="alternate" hreflang="uz" href="domen" />
+    <link rel="alternate" hreflang="en" href="domen/en" />
+    
+</head>
+
+<body>
+
+    <div class="page-wrapper" id="home">
+        <header class="main-header" >
+    
+            <!-- Header Upper -->
+            <div class="header-upper"  >
+                <div class="outer-container" style="background-color: rgba(102, 102, 102, 0.4);">
+
+                    <div class="inner-container clearfix"  >
+                        <style>
+                            @media (min-width: 1200px) {
+                                .logo-box img{
+                                    font-size: 60px;
+                                    /* Поднимаем логотип выше для экранов шире 1200px */
+                                    margin-top: -5px; /* Отрегулируйте это значение по вашему усмотрению */
+                                }
+                                .logo img {
+                                    width: 140px;
+                                    height: 120px;
+                                }
+                            }
+                        
+                            @media (min-width: 200px) {
+                                .logo-box {
+                                    /* Можно добавить стили для экранов шире 630px, если это необходимо */
+                                    font-size: 100px;
+                                    margin-top: -20px; /* Отрегулируйте это значение по вашему усмотрению */
+                                    /* Поднимаем логотип выше для экранов шире 1200px */
+
+                                }
+                                .logo img {
+                                    /* Можно добавить стили для изображений на экранах шире 630px, если это необходимо */
+                                    max-width: 120px;
+
+                                }
+                            }
+
+                            /* Стили для select */
+                            .navbar-collapse select {
+                                background-color: transparent; /* Прозрачный фон, как у навигационных ссылок */
+                                border: none; /* Убираем стандартную рамку */
+                                font-size: 16px; /* Размер шрифта, как у ссылок */
+                                color: white; /* Цвет текста, чтобы соответствовать ссылкам */
+                                padding: 8px 16px; /* Внутренние отступы для соответствия отступам ссылок */
+                                cursor: pointer; /* Курсор указателя, как у ссылок */
+                                appearance: none; /* Убираем стандартный вид браузера */
+                                -webkit-appearance: none; /* Для Safari */
+                                -moz-appearance: none; /* Для Firefox */
+                            }
+
+                            /* Стили для раскрывающегося списка (стрелочки вниз) */
+                            .navbar-collapse select::after {
+                                content: ''; /* Псевдоэлемент */
+                                position: absolute;
+                                right: 10px;
+                                top: 50%;
+                                width: 0;
+                                height: 0;
+                                border-left: 5px solid transparent;
+                                border-right: 5px solid transparent;
+                                border-top: 5px solid white; /* Белая стрелочка */
+                                pointer-events: none;
+                                transform: translateY(-50%);
+                            }
+
+                            /* Стили для раскрытых опций */
+                            .navbar-collapse select option {
+                                background-color: #333; /* Цвет фона опций */
+                                color: white; /* Цвет текста опций */
+                            }
+
+                            /* Дополнительно: стили для hover и focus */
+                            .navbar-collapse select:hover,
+                            .navbar-collapse select:focus {
+                                outline: none; /* Убираем фокус-рамку */
+                                background-color: rgba(255, 255, 255, 0.2); /* Легкое затемнение при наведении */
+                                
+                            }
+
+                        </style>
+                        
+                        <div class="pull-left logo-box">
+                            <div class="logo">
+                                <a href="{% url 'index' %}">
+                                    <img src="{% static 'images/imorat/NeftGazTadqiqot logo copy.png' %}" alt="{% trans 'Logo' %}" title="{% trans 'Logo' %}" >
+                                </a>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="nav-outer pull-left clearfix">
+                            <!-- Mobile Navigation Toggler -->
+                            <div class="mobile-nav-toggler">
+                                <span class="icon ti-menu"></span>
+                            </div>
+                            <!-- Main Menu -->
+                            <nav class="main-menu navbar-expand-md">
+                                <div class="navbar-header">
+
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                                        aria-label="{% trans 'Toggle navigation' %}">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        
+                                    </button>
+                                    
+                                </div>
+                                
+                                <div class="navbar-collapse show collapse clearfix" id="navbarSupportedContent">
+
+                                    <ul class="navigation clearfix">
+
+
+                                        <div class="relative group inline-block">
+                                            <div style="color: white;" class="text-white py-2 rounded-md hover:cursor-pointer flex justify-between items-center gap-4 px-4" onclick="toggleMenu(this)">
+                                                
+
+                                                    <p style="color: white; font-weight: bold; font-size: 17px;">{% trans 'Asosiy sahifa' %}</p>
+                                                <!-- <div style="background-color: white; border-radius: 50%; padding: -1px">
+                                                    <img style="width: 30px; padding: 6px" src="{% static 'images/down.png' %}" alt="">
+                                                </div> -->
+                                            </div>
+                                        
+                                            <div class="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                                                <ul class="p-4 space-y-1">
+                                                    <li><a href="{% url 'index' %}#section_1">{% trans "Tashkilot tarixi" %}</a></li>
+                                                    <li><a href="{% url 'structure' %}#structure">{% trans 'Tashkiliy tuzilma' %}</a></li>
+                                                    <li><a href="{% url 'boshqaruv' %}#boshqaruv">{% trans "Boshqaruv" %}</a></li>
+                                                    <li><a href=" {% url 'finance' %}#finances">{% trans "Moliyaviy ko'rsatkichlar" %}</a></li>
+                                                    <li><a href="{% url 'index' %}#allnews">{% trans 'Yangiliklar' %}</a></li>
+                                                    <li><a href="{% url 'tenders' %}#tenders">{% trans 'Tenderlar' %}</a></li>
+                                                    <li><a href="{% url 'license' %}#license">{% trans "Akkreditsiya" %}</a></li>
+                                                    <li><a href="{% url 'index' %}#contact">{% trans 'Aloqa' %}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <style>
+                                            /* Скрыть вложенные пункты меню для мобильных устройств */
+                                            @media (max-width: 768px) {
+                                                .navigation {
+                                                    
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    align-items: flex-start;
+                                                }
+
+                                                .navigation li {
+                                                    width: 100%;
+                                                    margin-bottom: 10px;
+                                                }
+
+                                                .relative.group .absolute {
+                                                    display: none;
+                                                }
+
+                                                /* Показываем выпадающее меню по клику */
+                                                .relative.group.active .absolute {
+                                                    display: block;
+                                                    position: relative;
+                                                    width: 100%;
+                                                    left: 0;
+                                                    top: 0;
+                                                    margin-top: 10px;
+                                                }
+                                            }
+
+                                        </style>
+                                        <script>
+                                            function toggleMenu(element) {
+                                                element.parentNode.classList.toggle('active');
+                                            }
+                                            
+                                        </script>
+
+                                        <div class="relative group inline-block">
+                                            <div style="color: white;" class="text-white py-2 rounded-md hover:cursor-pointer flex justify-between items-center gap-4 px-4" onclick="toggleMenu(this)">
+                                                <p style="color: white; font-weight: bold; font-size: 17px;">{% trans 'Aksiyadorlarga' %}</p>
+                                            </div>
+                                        
+                                            <div class="absolute left-0 mt-2 w-64 bg-white border border-gray-200 rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-1000">
+                                                <ul class="p-4 space-y-1">
+                                                    <li><a href="{% url 'person' %}#persons">{% trans "Ijro organi a'zolari" %}</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <li><a style="color: white;"  href="{% url 'department' %}#bolim">{% trans "Bo'limlar" %}</a></li>
+                                        <li><a style="color: white;"  href="{% url 'more_info' %}#ochiqM">{% trans "Ochiq ma'lumotlar" %}</a></li>
+                                        <li><a style="color: white;" href="{% url 'vacancy' %}#vacancy">{% trans "Vakantsiya" %}</a></li>
+                                        
+
+                                    </ul>
+
+
+                                    {% include 'includes/language.html' %}
+                                </div>
+                                
+                            </nav>
+                            
+                        </div>
+
+                        <!-- Outer Box -->
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!--End Header Upper-->
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="menu-backdrop"></div>
+                <div class="close-btn">
+                    <span style="color: white;" class="icon lnr lnr-cross"></span>
+                </div>
+                
+                <nav class="menu-box" style="background-color: rgba(102, 102, 102, 0.4);">
+                    <div class="nav-logo" >
+                        <a href="{% url 'index' %}">
+                            <img src="{% static 'images/imorat/NeftGazTadqiqot logo copy.png' %}" alt="{% trans 'Logo' %}" title="{% trans 'Logo' %}">
+                        </a>
+                    </div>
+                    <div class="menu-outer">
+                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                    </div>
+                </nav>
+            </div><!-- End Mobile Menu -->
+            
+        </header>
+    </div>
+    
+    
+    
+    <style>
+        .slide {
+            background-image: url('{% static "images/imorat/neft_gaz.jpeg" %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        
+        /* Для мобильных устройств */
+        @media only screen and (max-width: 768px) {
+            .slide {
+
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        
+        /* Для устройств с высоким разрешением (Retina-дисплеи) */
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi) {
+            .slide {
+                background-image: url('{% static "images/imorat/neft_gaz.jpeg" %}'); /* Изображение с высоким разрешением */
+            }
+        }
+    </style>
+    
+    
+    <section class="banner-section">
+        <div class="main-slider-carousel owl-carousel owl-theme">
+            
+            <div class="slide">
+                <div class="auto-container">
+                    <!-- Content Boxed -->
+                    <div class="content-boxed">
+                        <div class="inner-boxed">
+                            <div class="title"></div>
+
+                            <p></p><p><p></p></p>
+
+                            <br><br><br><br><br><br><br><br>
+                            <div class="btn-box"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    
+        <!--Scroll Down Btn-->
+        <div class="mouse-btn-down scroll-to-target" data-target=".experiance-section">
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+            <div class="chevron"></div>
+        </div>
+    
+        <!-- Social Box -->
+        <ul class="social-box">
+            <li><a href="https://t.me/Nurxonbobo" class="ion-social-instagram"></a></li>
+            <li><a href="https://t.me/Nurxonbobo" class="ion-social-facebook"></a></li>
+            <li><a href="https://t.me/Nurxonbobo" class="fab fa-telegram"></a></li>
+
+
+        </ul>
+    </section>
+    
+
+    {% block content %}
+
+    {% endblock content %}
+
+
+    {% block news %}
+
+    {% endblock news %}
+
+
+    {% include 'includes/footer.html' %}
+    <!-- Scripts -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+    <script src="{% static 'js/jquery.fancybox.js' %}"></script>
+    <script src="{% static 'js/appear.js' %}"></script>
+    <script src="{% static 'js/owl.js' %}"></script>
+    <script src="{% static 'js/wow.js' %}"></script>
+    <script src="{% static 'js/parallax.min.js' %}"></script>
+    <script src="{% static 'js/tilt.jquery.min.js' %}"></script>
+    <script src="{% static 'js/jquery.paroller.min.js' %}"></script>
+    <script src="{% static 'js/jquery-ui.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+
+    
+    
+</body>
+</html>

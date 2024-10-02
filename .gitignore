@@ -1,0 +1,10 @@
+*~
+env/
+.idea/
+.vscode/
+*.pyc
+*.pyo
+*.so
+*.egg-info/
+*.egg-info/*
+*pycache*

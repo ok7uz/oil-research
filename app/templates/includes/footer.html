@@ -1,0 +1,48 @@
+{% load static %}
+{% load  i18n %}
+<footer class="main-footer">
+    <div class="auto-container">
+<style>
+    .logog {
+        font-size: 100px;
+        display: flex;
+        justify-content: center; /* Горизонтальное центрирование */
+        align-items: center; /* Вертикальное центрирование */
+
+    }
+    .logog img {
+        width: 200px; /* Установите нужную ширину */
+        height: auto; /* Автоматическая высота, сохраняющая пропорции */
+    }
+</style>
+
+<div class="logog">
+    <img src="{% static 'images/imorat/NeftGazTadqiqot logo copy.png' %}" alt="{% trans 'Logo' %}">
+</div>
+
+        
+        
+        <ul class="footer-page-nav">
+            <li><a href="{% url 'index' %}">{% trans 'Asosiy sahifa' %}</a></li>
+            <li><a href="#allnews">{% trans 'Yangiliklar' %}</a></li>
+            <li><a href="{% url 'index' %}#contact">{% trans 'Aloqa' %}</a></li>
+            <li><a href="{% url 'license' %}#license">{% trans "Akkreditsiya" %}</a></li>
+            <li><a href="{% url 'tenders' %}#tenders">{% trans 'Tenderlar' %}</a></li>
+            <li><a href="{% url 'structure' %}#structure">{% trans 'Tashkiliy tuzilma' %}</a></li>
+            <li><a href=" {% url 'finance' %}#finances">{% trans "Moliyaviy ko'rsatkichlar" %}</a></li>
+        </ul>
+        <div class="contact-info">Islom Karimov 1 Buxoro, O'zbekiston <br> +998 55 305 00 55<br> +998 65 221-20-20 <br>
+</div>
+        <ul class="footer-social-icons">
+            <li><a href="https://t.me/Nurxonbobo" class="icofont-facebook"></a></li>
+            <li><a href="https://t.me/Nurxonbobo" class="icofont-instagram"></a></li>
+            <li><a href="https://t.me/Nurxonbobo" class="fab fa-telegram"></a></li>
+        
+        </ul>
+        <div class="copyright">Copyright ©
+            <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+            <script type="text/javascript">document.write(new Date().getFullYear());</script> All rights reserved | Made with <i class="icon-heart text-danger" aria-hidden="true"></i> by <a
+                href="https://t.me/khamrayevbb" target="_blank">Khamrayev Bobur</a>
+        </div>
+    </div>
+</footer>

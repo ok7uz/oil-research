@@ -1,0 +1,411 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block content %}
+<style>
+    .main_butt {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr); /* Делает 5 колонок */
+        gap: 20px; /* Расстояние между кнопками */
+        padding: 20px;
+    }
+
+    .custom-button {
+        position: relative;
+        background-color: #27272a; /* bg-neutral-800 */
+        height: 4rem; /* h-16 */
+        width: 16rem; /* w-64 */
+        border: 1px solid transparent; /* hover:border-rose-300 */
+        text-align: left; /* text-left */
+        padding: 0.75rem; /* p-3 */
+        color: #f9fafb; /* text-gray-50 */
+        font-size: 1rem; /* text-base */
+        font-weight: 700; /* font-bold */
+        border-radius: 0.5rem; /* rounded-lg */
+        overflow: hidden;
+        transition: all 0.5s ease; /* duration-500 */
+    }
+
+    .custom-button:hover {
+        text-decoration: underline; /* hover:underline */
+        text-underline-offset: 4px; /* hover:underline-offset-4 */
+        text-decoration-thickness: 2px; /* hover:decoration-2 */
+        color: #7181fb; /* hover:text-rose-300 */
+    }
+
+    .custom-button::before {
+        content: '';
+        position: absolute;
+        width: 3rem; /* before:w-12 */
+        height: 3rem; /* before:h-12 */
+        right: 0.25rem; /* before:right-1 */
+        top: 0.25rem; /* before:top-1 */
+        background-color: #8b5cf6; /* before:bg-violet-500 */
+        border-radius: 9999px; /* before:rounded-full */
+        filter: blur(8px); /* before:blur-lg */
+        transition: all 0.5s ease; /* before:duration-500 */
+        z-index: 10;
+    }
+
+    .custom-button:hover::before {
+        right: 3rem; /* hover:before:right-12 */
+        bottom: 2rem; /* hover:before:-bottom-8 */
+        box-shadow: 20px 20px 20px 30px #a21caf; /* hover:before:[box-shadow:...] */
+    }
+
+    .custom-button::after {
+        content: '';
+        position: absolute;
+        width: 5rem; /* after:w-20 */
+        height: 5rem; /* after:h-20 */
+        right: 2rem; /* after:right-8 */
+        top: 0.75rem; /* after:top-3 */
+
+        border-radius: 9999px; /* after:rounded-full */
+        filter: blur(8px); /* after:blur-lg */
+        transition: all 0.5s ease; /* after:duration-500 */
+        z-index: 10;
+    }
+
+    .custom-button:hover::after {
+        right: -2rem; /* hover:after:-right-8 */
+    }
+
+    @media (max-width: 768px) {
+        .main_butt {
+            display: flex; /* Меняем grid на flex */
+            flex-direction: column; /* Вертикальное расположение кнопок */
+            align-items: center; /* Горизонтальное выравнивание по центру */
+            justify-content: center; /* Вертикальное выравнивание по центру */
+            height: 100vh; /* Высота контейнера на весь экран */
+            gap: 20px; /* Оставляем расстояние между кнопками */
+
+        }
+        .image-text-container {
+            flex-direction: column; /* Изменяем расположение на вертикальное */
+            text-align: center; /* Выравниваем текст по центру */
+            gap: 20px; /* Расстояние между изображением и текстом */
+        }
+    
+        .image-section img {
+            max-width: 100%; /* Изображение на всю ширину */
+            height: auto; /* Сохраняем пропорции изображения */
+        }
+    
+        .text-section {
+            margin-top: 20px; /* Отступ сверху для текста */
+        }
+    }
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .image-text-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+    }
+    
+    .image-section img {
+        max-width: 450px;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    .text-section h1 {
+        font-size: 24px;
+
+        text-align: center;
+        max-width: 300px;
+    }
+    
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .card {
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .card input {
+        max-width: 20px;
+        height: 20px;
+    }
+    
+    .card p {
+        font-size: 16px;
+        color: #333;
+    }
+
+    /* Основные стили для десктопной версии */
+.image-text-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Две колонки для изображений и текста */
+    gap: 20px;
+    padding: 20px;
+}
+
+.image-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.section-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.section-text {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 768px) {
+    .image-text-section {
+        grid-template-columns: 1fr; /* Одна колонка на мобильных устройствах */
+    }
+
+    .image-text-container {
+        margin-bottom: 20px;
+    }
+
+    .section-image {
+        order: 1; /* Картинка сверху */
+        
+    }
+
+    .section-text {
+        order: 2; /* Текст снизу */
+        font-size: 1em;
+    
+    }
+}
+
+    
+
+/* From Uiverse.io by eslam-hany */ 
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Расстояние между карточками */
+    padding: 20px;
+}
+
+.cardU {
+    width: 1020px;
+    height: 120px;
+    background: mediumturquoise;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.cardU a {
+    color: black;
+    text-decoration: none;
+}
+
+.cardU a:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.cardU .read-more {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 18px;
+    color: white;
+    text-decoration: underline;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.cardU:hover .read-more {
+    opacity: 1;
+}
+
+/* Адаптация для мониторов */
+@media (min-width: 1024px) {
+    .card-container {
+        flex-direction: column; /* Одноколоночная структура на мониторах */
+    }
+
+    .cardU {
+        width: 1320px;
+        margin: 10px 0; /* Отступы между карточками */
+    }
+    .department-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* Количество строк (можно указать 1 или больше) */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 20px;
+    }
+}
+
+/* Адаптация для телефонов */
+@media (max-width: 768px) {
+    .cardU {
+        width: 90%; /* Уменьшение ширины для мобильных устройств */
+        height: auto;
+        font-size: 20px; /* Уменьшение размера текста */
+        padding: 20px;
+    }
+
+
+    .cardU .read-more {
+        bottom: 5px;
+        right: 10px;
+        font-size: 14px; /* Уменьшение размера текста для ссылок на мобильных */
+    }
+
+    /* Ограничение количества строк для заголовка */
+    .department-title {
+        display: -webkit-box;
+        -webkit-line-clamp: 1; /* Количество строк (можно указать 1 или больше) */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 18px;
+    }
+}
+
+</style>
+<br>
+<h2 id="bolim" style="text-align: center; font-size: 60px;">{% trans "B'olimlar" %}</h2>
+<br><hr><br><br>
+<div class="card-container">
+    {% for dep in departments %}
+    <div class="cardU">
+        <a class="department-title" href="{% url 'department_detail' dep.slug %}#dep">{{ dep.title }}</a>
+        <a href="{% url 'department_detail' dep.slug %}" class="read-more">{% trans "Ko'proq bilib olish" %}</a>
+    </div>
+    {% endfor %}
+</div>
+
+
+<br><br>
+
+<div class="container">
+    <div class="image-text-container">
+        <div class="image-section">
+            <img src="{% static 'images/3.jpg' %}" alt="{% trans 'Worker' %}" class="image">
+        </div>
+        
+        <div class="text-section">
+            <h1>{% trans "Neft va gaz konlarini tadqiq etish bo'limi neft va gaz qazib olish konlarida:" %}</h1>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans "ishlatilayotgan quduqlarning joriy mahsuldorlik xarakteristikalarini" %}</p>
+        </div>
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans "qazib olinayotgan gazning gaz-kondensat xarakteristikalarini" %}</p>
+        </div>
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans "quduqlarning joriy suv ko'rsatgichlarini" %}</p>
+        </div>
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans "quduqlarning qatlam bosimini hamda qazib olinayotgan neftning suvlanish darajasi" %}</p>
+        </div>
+    </div>
+</div>
+
+
+<section class="image-text-section">
+    <div class="image-text-container">
+        <img style="height: 400px;" src="{% static 'images/1_3.jpg' %}" alt="{% trans 'Image 1' %}" class="section-image">
+
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans "Gazlar, gaz kondensatlari, neftlar va qatlam suvlari tadqiq etish masalasi." %}</p>
+        </div>
+    </div>
+    <div class="image-text-container">
+        <img src="{% static 'images/1_2.jpg' %}" alt="{% trans 'Image 2' %}" class="section-image">
+
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans "Gazni tayyorlash, qayta ishlash va atrof muhitni muxofaza qilish boʻlimi." %}</p>
+        </div>
+    </div>
+</section>
+
+
+<div class="container">
+    <div class="image-text-container">
+        <div class="image-section">
+            <img src="{% static 'images/1_1.jpg' %}" alt="Worker" class="image">
+        </div>
+        
+        <div class="text-section">
+            <h1>{% trans 'Kon uskunalari va quvurlarning ingibitorlik himoyasi bo‘limida' %}</h1>
+        </div>
+    </div>
+    <div class="cards">
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans 'ishlatilayotgan quduqlarning joriy mahsuldorlik xarakteristikalarini' %}</p>
+        </div>
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans 'metallning vodorodlanish darajasini' %}</p>
+        </div>
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans 'qo‘llanilayotgan ingibitorlarning samaradorligini aniqlash' %}</p>
+        </div>
+        <div class="card">
+            <input type="checkbox" checked disabled>
+            <p>{% trans 'tuproqning metallni yemirilishi xavfi yuqori bo‘lgan joylarini aniqlash' %}</p>
+        </div>
+    </div>
+</div>
+</div>
+<br><br>
+{% endblock %}
